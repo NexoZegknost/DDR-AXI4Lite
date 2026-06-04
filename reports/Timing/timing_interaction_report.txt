@@ -1,0 +1,18 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
+| Date         : Fri Jun  5 01:10:14 2026
+| Host         : NguyenDuc running 64-bit major release  (build 9200)
+| Command      : report_clock_interaction -delay_type min_max -significant_digits 3 -name timing_2 -file {D:/Docs/Learning HCMUT/Logic design with HDL/Project 2 - Rework/reports/Timing/timing_interaction_report.txt} -append
+| Design       : mem_controller_top
+| Device       : 7z020-clg400
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+| Design State : Synthesized
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Clock Interaction Report
+
+No clocks found.
+
+
+

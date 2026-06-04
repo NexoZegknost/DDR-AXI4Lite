@@ -1,0 +1,230 @@
+<?xml version="1.0"?>
+<POWERDATA author="Vivado Power Analysis" dataVersion="2025.2" design="mem_controller_top" designState="synthesized" date="Fri Jun  5 01:13:22 2026" pwrOpt="None" activityLevel="vectorless">
+	<ENVIRONMENT>
+		<DEVICE part="xc7z020" grade="commercial" package="clg400" speed="-1" process="typical" vid="No">
+		</DEVICE>
+		<VOLTAGESOURCES>
+			<SOURCE name="Vcco18" voltage="1.800000" icc="2.111305" iccq="0.001000" power="3.802148">
+			</SOURCE>
+			<SOURCE name="Vccbram" voltage="1.000000" icc="0.000000" iccq="0.021050" power="0.021050">
+			</SOURCE>
+			<SOURCE name="Vccint" voltage="1.000000" icc="3.264390" iccq="0.290783" power="3.555173">
+			</SOURCE>
+			<SOURCE name="Vccaux" voltage="1.800000" icc="0.335020" iccq="0.097856" power="0.779176">
+			</SOURCE>
+			<SOURCE name="Vccpint" voltage="1.000000" icc="0.000000" iccq="0.458721" power="0.458721">
+			</SOURCE>
+			<SOURCE name="Vccpaux" voltage="1.800000" icc="0.000000" iccq="0.010330" power="0.018594">
+			</SOURCE>
+			<SOURCE name="Vccpll" voltage="1.800000" icc="0.000000" iccq="0.003000" power="0.005400">
+			</SOURCE>
+			<SOURCE name="Vccadc" voltage="1.800000" icc="0.000000" iccq="0.020000" power="0.036000">
+			</SOURCE>
+		</VOLTAGESOURCES>
+		<THERMAL>
+			<AMBIENT value="25.000000">
+			</AMBIENT>
+			<AIRFLOW value="250.000000">
+			</AIRFLOW>
+			<HEATSINK value="none">
+			</HEATSINK>
+			<BOARDSELECTION value="medium (10&quot;x10&quot;)">
+			</BOARDSELECTION>
+			<BOARDLAYERS value="8to11 (8 to 11 Layers)">
+			</BOARDLAYERS>
+			<TSA value="0.000000">
+			</TSA>
+			<TJB value="7.400000">
+			</TJB>
+			<BOARDTEMP value="25.0 (C)">
+			</BOARDTEMP>
+			<JUNCTION value="125.0 (C)">
+			</JUNCTION>
+		</THERMAL>
+	</ENVIRONMENT>
+	<BLOCKDETAILS>
+		<BYTYPE>
+			<BLOCKTYPE name="LOGIC">
+				<LOGIC clock="Unclocked_or_HFN_instance" clockFreq="100000.000000" clockFreq2="5075.116661" toggleRate="5.574308" toggleRate2="5.258989" totalRate="1104.714976" name="Unassigned_Clock" hierName="mem_controller_top/u_axi_slave_interface" writeRate="0.000000" enableRate="0.213870" fanout="2.415000" ru="11.030156" fanout2="2.415000" totalFanout="483.000000" fanoutRate="1488087.779078" numNets="201" extNets="200" ffs="163" luts="20" logicCap="22151901" signalCap="96080.233795" power="0.117768" sp="0.187127">
+				</LOGIC>
+				<LOGIC clock="Unclocked_or_HFN_instance" clockFreq="100000.000000" clockFreq2="16206.140430" toggleRate="16.206140" toggleRate2="11.087818" totalRate="59.526950" name="High_Fanout_Nets" hierName="mem_controller_top/u_axi_slave_interface" writeRate="0.000000" enableRate="0.000000" fanout="38.000000" ru="20.607483" fanout2="38.000000" totalFanout="190.000000" fanoutRate="1353127.370030" numNets="5" extNets="5" luts="5" logicCap="2227000" signalCap="16586.696289" power="0.017403" sp="0.118941">
+				</LOGIC>
+				<LOGIC clock="Unclocked_or_HFN_instance" clockFreq="100000.000000" clockFreq2="2694.032300" toggleRate="2.908797" toggleRate2="2.455080" totalRate="2295.001475" name="Unassigned_Clock" hierName="mem_controller_top/u_cmd_scheduler" writeRate="0.000000" enableRate="0.266195" fanout="1.668838" ru="9.196144" fanout2="1.668838" totalFanout="1537.000000" fanoutRate="1710272.007283" numNets="921" extNets="921" ffs="319" luts="534" logicCap="307415305" signalCap="248400.671204" power="0.440401" sp="0.309227">
+				</LOGIC>
+				<LOGIC clock="Unclocked_or_HFN_instance" clockFreq="100000.000000" clockFreq2="2974.721865" toggleRate="2.833068" toggleRate2="2.364676" totalRate="48.515629" name="High_Fanout_Nets" hierName="mem_controller_top/u_cmd_scheduler" writeRate="0.000000" enableRate="1.000000" fanout="118.857143" ru="25.955559" fanout2="96.450000" totalFanout="2496.000000" fanoutRate="2296619.444323" numNets="21" extNets="21" ffs="7" luts="14" logicCap="6442600" signalCap="218622.384277" power="0.012644" sp="0.204068">
+				</LOGIC>
+				<LOGIC clock="Unclocked_or_HFN_instance" clockFreq="100000.000000" clockFreq2="17030.059557" toggleRate="18.776732" toggleRate2="14.005466" totalRate="2056.697183" name="Unassigned_Clock" hierName="mem_controller_top/u_protocol_engine" writeRate="0.000000" enableRate="0.266144" fanout="2.542636" ru="10.648384" fanout2="2.542636" totalFanout="328.000000" fanoutRate="4106326.481710" numNets="129" extNets="129" ffs="66" luts="51" logicCap="31814200" signalCap="60527.929138" power="0.427364" sp="0.483630">
+				</LOGIC>
+				<LOGIC clock="Unclocked_or_HFN_instance" clockFreq="100000.000000" clockFreq2="20419.751628" toggleRate="20.419752" toggleRate2="4.446350" totalRate="16.713521" name="High_Fanout_Nets" hierName="mem_controller_top/u_protocol_engine" writeRate="0.000000" enableRate="1.000000" fanout="30.000000" ru="15.385537" fanout2="30.000000" totalFanout="90.000000" fanoutRate="243942.515180" numNets="3" extNets="3" ffs="1" luts="2" logicCap="951800" signalCap="8163.427979" power="0.012767" sp="0.022472">
+				</LOGIC>
+				<LOGIC clock="Unclocked_or_HFN_instance" clockFreq="100000.000000" clockFreq2="19575.760155" toggleRate="24.024797" toggleRate2="14.858326" totalRate="403.002582" name="Unassigned_Clock" hierName="mem_controller_top/u_refresh_timer" writeRate="0.000000" enableRate="1.000000" fanout="3.259259" ru="10.817074" fanout2="3.259259" totalFanout="88.000000" fanoutRate="730830.280879" numNets="27" extNets="27" ffs="11" luts="11" logicCap="7612900" signalCap="10467.524841" power="0.077152" sp="0.085967">
+				</LOGIC>
+				<LOGIC clock="Unclocked_or_HFN_instance" clockFreq="100000.000000" clockFreq2="0.000000" toggleRate="0.000000" toggleRate2="12.500000" totalRate="12.500000" name="High_Fanout_Nets" hierName="mem_controller_top" writeRate="0.000000" enableRate="0.000000" fanout="567.000000" ru="0.000000" fanout2="567.000000" totalFanout="567.000000" fanoutRate="3543750.000000" numNets="1" extNets="1" BUFG="1" logicCap="0" signalCap="42629.898438" power="0.005813" sp="0.266437">
+				</LOGIC>
+			</BLOCKTYPE>
+			<BLOCKTYPE name="IO">
+				<MODULE name="clk" count="1">
+					<GROUPSUMMARY>
+						<IO name="clk" clock="N/A" clockFreq="0.000000" ioStandard="LVCMOS18" bidis="0" inputs="1" outputs="0" signalRate="12500.000000" toggleRate="12.500000" dataRate="ASYNC" serdes="No" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="RTT_NONE" outTerm="NONE" ibufDisable="0.000000" dcitermDisable="0.000000" ioBank="0" vccInt="0.004031" vccAux="0.000000" vcco="0.002959" vccoCurrent="0.001644" extTerm="NONE">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="mem_addr&lt;0:14&gt;" count="15">
+					<GROUPSUMMARY>
+						<IO name="mem_addr&lt;0:14&gt;" clock="N/A" clockFreq="0.000000" ioStandard="LVCMOS18_12_SLOW" bidis="0" inputs="0" outputs="15" signalRate="1816.007088" toggleRate="1.816007" outputEnableRate="1.000000" outputLoad="0.000000" dataRate="ASYNC" serdes="No" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="NONE" outTerm="RDRV_NONE_NONE" ibufDisable="0.000000" dcitermDisable="0.000000" ioBank="0" vccInt="0.000000" vccAux="0.076262" vcco="0.441290" vccoCurrent="0.245161" extTerm="NONE">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="mem_ba&lt;0:2&gt;" count="3">
+					<GROUPSUMMARY>
+						<IO name="mem_ba&lt;0:2&gt;" clock="N/A" clockFreq="0.000000" ioStandard="LVCMOS18_12_SLOW" bidis="0" inputs="0" outputs="3" signalRate="1158.098551" toggleRate="1.158099" outputEnableRate="1.000000" outputLoad="0.000000" dataRate="ASYNC" serdes="No" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="NONE" outTerm="RDRV_NONE_NONE" ibufDisable="0.000000" dcitermDisable="0.000000" ioBank="0" vccInt="0.000000" vccAux="0.009727" vcco="0.056284" vccoCurrent="0.031269" extTerm="NONE">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="mem_cas_n" count="1">
+					<GROUPSUMMARY>
+						<IO name="mem_cas_n" clock="N/A" clockFreq="0.000000" ioStandard="LVCMOS18_12_SLOW" bidis="0" inputs="0" outputs="1" signalRate="13049.957031" toggleRate="13.049957" outputEnableRate="1.000000" outputLoad="0.000000" dataRate="ASYNC" serdes="No" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="NONE" outTerm="RDRV_NONE_NONE" ibufDisable="0.000000" dcitermDisable="0.000000" ioBank="0" vccInt="0.000000" vccAux="0.036535" vcco="0.211409" vccoCurrent="0.117450" extTerm="NONE">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="mem_cke" count="1">
+					<GROUPSUMMARY>
+						<IO name="mem_cke" clock="N/A" clockFreq="0.000000" ioStandard="LVCMOS18_12_SLOW" bidis="0" inputs="0" outputs="1" signalRate="0.000000" toggleRate="0.000000" outputEnableRate="1.000000" outputLoad="0.000000" dataRate="ASYNC" serdes="No" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="NONE" outTerm="RDRV_NONE_NONE" ibufDisable="0.000000" dcitermDisable="0.000000" ioBank="0" vccInt="0.000000" vccAux="0.000000" vcco="0.000000" vccoCurrent="0.000000" extTerm="NONE">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="mem_cs_n" count="1">
+					<GROUPSUMMARY>
+						<IO name="mem_cs_n" clock="N/A" clockFreq="0.000000" ioStandard="LVCMOS18_12_SLOW" bidis="0" inputs="0" outputs="1" signalRate="0.000000" toggleRate="0.000000" outputEnableRate="1.000000" outputLoad="0.000000" dataRate="ASYNC" serdes="No" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="NONE" outTerm="RDRV_NONE_NONE" ibufDisable="0.000000" dcitermDisable="0.000000" ioBank="0" vccInt="0.000000" vccAux="0.000000" vcco="0.000000" vccoCurrent="0.000000" extTerm="NONE">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="mem_dq&lt;0:31&gt;" count="32">
+					<GROUPSUMMARY>
+						<IO name="mem_dq&lt;0:31&gt;" clock="N/A" clockFreq="0.000000" ioStandard="LVCMOS18_12_SLOW" bidis="32" inputs="0" outputs="0" signalRate="2762.403358" toggleRate="2.762403" outputEnableRate="0.027998" outputLoad="0.000000" dataRate="ASYNC" serdes="No" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="RTT_NONE" outTerm="RDRV_NONE_NONE" ibufDisable="0.000000" dcitermDisable="0.000000" ioBank="0" vccInt="0.028508" vccAux="0.247477" vcco="1.452953" vccoCurrent="0.807196" extTerm="NONE">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="mem_ras_n" count="1">
+					<GROUPSUMMARY>
+						<IO name="mem_ras_n" clock="N/A" clockFreq="0.000000" ioStandard="LVCMOS18_12_SLOW" bidis="0" inputs="0" outputs="1" signalRate="2790.315186" toggleRate="2.790315" outputEnableRate="1.000000" outputLoad="0.000000" dataRate="ASYNC" serdes="No" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="NONE" outTerm="RDRV_NONE_NONE" ibufDisable="0.000000" dcitermDisable="0.000000" ioBank="0" vccInt="0.000000" vccAux="0.007812" vcco="0.045203" vccoCurrent="0.025113" extTerm="NONE">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="mem_we_n" count="1">
+					<GROUPSUMMARY>
+						<IO name="mem_we_n" clock="N/A" clockFreq="0.000000" ioStandard="LVCMOS18_12_SLOW" bidis="0" inputs="0" outputs="1" signalRate="8912.021484" toggleRate="8.912022" outputEnableRate="1.000000" outputLoad="0.000000" dataRate="ASYNC" serdes="No" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="NONE" outTerm="RDRV_NONE_NONE" ibufDisable="0.000000" dcitermDisable="0.000000" ioBank="0" vccInt="0.000000" vccAux="0.024950" vcco="0.144375" vccoCurrent="0.080208" extTerm="NONE">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="rst_n" count="1">
+					<GROUPSUMMARY>
+						<IO name="rst_n" clock="N/A" clockFreq="0.000000" ioStandard="LVCMOS18" bidis="0" inputs="1" outputs="0" signalRate="0.000000" toggleRate="0.000000" dataRate="ASYNC" serdes="No" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="RTT_NONE" outTerm="NONE" ibufDisable="0.000000" dcitermDisable="0.000000" ioBank="0" vccInt="0.000000" vccAux="0.000000" vcco="0.000000" vccoCurrent="0.000000" extTerm="NONE">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="s_axi_araddr&lt;0:29&gt;" count="30">
+					<GROUPSUMMARY>
+						<IO name="s_axi_araddr&lt;0:29&gt;" clock="N/A" clockFreq="0.000000" ioStandard="LVCMOS18" bidis="0" inputs="30" outputs="0" signalRate="12500.000000" toggleRate="12.500000" dataRate="ASYNC" serdes="No" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="RTT_NONE" outTerm="NONE" ibufDisable="0.000000" dcitermDisable="0.000000" ioBank="0" vccInt="0.120937" vccAux="0.000000" vcco="0.088762" vccoCurrent="0.049313" extTerm="NONE">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="s_axi_arready" count="1">
+					<GROUPSUMMARY>
+						<IO name="s_axi_arready" clock="N/A" clockFreq="0.000000" ioStandard="LVCMOS18_12_SLOW" bidis="0" inputs="0" outputs="1" signalRate="21343.832031" toggleRate="21.343832" outputEnableRate="1.000000" outputLoad="0.000000" dataRate="ASYNC" serdes="No" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="NONE" outTerm="RDRV_NONE_NONE" ibufDisable="0.000000" dcitermDisable="0.000000" ioBank="0" vccInt="0.000000" vccAux="0.059755" vcco="0.345770" vccoCurrent="0.192094" extTerm="NONE">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="s_axi_arvalid" count="1">
+					<GROUPSUMMARY>
+						<IO name="s_axi_arvalid" clock="N/A" clockFreq="0.000000" ioStandard="LVCMOS18" bidis="0" inputs="1" outputs="0" signalRate="12500.000000" toggleRate="12.500000" dataRate="ASYNC" serdes="No" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="RTT_NONE" outTerm="NONE" ibufDisable="0.000000" dcitermDisable="0.000000" ioBank="0" vccInt="0.004031" vccAux="0.000000" vcco="0.002959" vccoCurrent="0.001644" extTerm="NONE">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="s_axi_awaddr&lt;0:29&gt;" count="30">
+					<GROUPSUMMARY>
+						<IO name="s_axi_awaddr&lt;0:29&gt;" clock="N/A" clockFreq="0.000000" ioStandard="LVCMOS18" bidis="0" inputs="30" outputs="0" signalRate="12500.000000" toggleRate="12.500000" dataRate="ASYNC" serdes="No" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="RTT_NONE" outTerm="NONE" ibufDisable="0.000000" dcitermDisable="0.000000" ioBank="0" vccInt="0.120937" vccAux="0.000000" vcco="0.088762" vccoCurrent="0.049313" extTerm="NONE">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="s_axi_awready" count="1">
+					<GROUPSUMMARY>
+						<IO name="s_axi_awready" clock="N/A" clockFreq="0.000000" ioStandard="LVCMOS18_12_SLOW" bidis="0" inputs="0" outputs="1" signalRate="21343.832031" toggleRate="21.343832" outputEnableRate="1.000000" outputLoad="0.000000" dataRate="ASYNC" serdes="No" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="NONE" outTerm="RDRV_NONE_NONE" ibufDisable="0.000000" dcitermDisable="0.000000" ioBank="0" vccInt="0.000000" vccAux="0.059755" vcco="0.345770" vccoCurrent="0.192094" extTerm="NONE">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="s_axi_awvalid" count="1">
+					<GROUPSUMMARY>
+						<IO name="s_axi_awvalid" clock="N/A" clockFreq="0.000000" ioStandard="LVCMOS18" bidis="0" inputs="1" outputs="0" signalRate="12500.000000" toggleRate="12.500000" dataRate="ASYNC" serdes="No" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="RTT_NONE" outTerm="NONE" ibufDisable="0.000000" dcitermDisable="0.000000" ioBank="0" vccInt="0.004031" vccAux="0.000000" vcco="0.002959" vccoCurrent="0.001644" extTerm="NONE">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="s_axi_bready" count="1">
+					<GROUPSUMMARY>
+						<IO name="s_axi_bready" clock="N/A" clockFreq="0.000000" ioStandard="LVCMOS18" bidis="0" inputs="1" outputs="0" signalRate="12500.000000" toggleRate="12.500000" dataRate="ASYNC" serdes="No" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="RTT_NONE" outTerm="NONE" ibufDisable="0.000000" dcitermDisable="0.000000" ioBank="0" vccInt="0.004031" vccAux="0.000000" vcco="0.002959" vccoCurrent="0.001644" extTerm="NONE">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="s_axi_bresp&lt;0:1&gt;" count="2">
+					<GROUPSUMMARY>
+						<IO name="s_axi_bresp&lt;0:1&gt;" clock="N/A" clockFreq="0.000000" ioStandard="LVCMOS18_12_SLOW" bidis="0" inputs="0" outputs="2" signalRate="0.000000" toggleRate="0.000000" outputEnableRate="1.000000" outputLoad="0.000000" dataRate="ASYNC" serdes="No" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="NONE" outTerm="RDRV_NONE_NONE" ibufDisable="0.000000" dcitermDisable="0.000000" ioBank="0" vccInt="0.000000" vccAux="0.000000" vcco="0.000000" vccoCurrent="0.000000" extTerm="NONE">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="s_axi_bvalid" count="1">
+					<GROUPSUMMARY>
+						<IO name="s_axi_bvalid" clock="N/A" clockFreq="0.000000" ioStandard="LVCMOS18_12_SLOW" bidis="0" inputs="0" outputs="1" signalRate="6422.283691" toggleRate="6.422284" outputEnableRate="1.000000" outputLoad="0.000000" dataRate="ASYNC" serdes="No" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="NONE" outTerm="RDRV_NONE_NONE" ibufDisable="0.000000" dcitermDisable="0.000000" ioBank="0" vccInt="0.000000" vccAux="0.017980" vcco="0.104041" vccoCurrent="0.057801" extTerm="NONE">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="s_axi_rdata&lt;0:31&gt;" count="32">
+					<GROUPSUMMARY>
+						<IO name="s_axi_rdata&lt;0:31&gt;" clock="N/A" clockFreq="0.000000" ioStandard="LVCMOS18_12_SLOW" bidis="0" inputs="0" outputs="32" signalRate="2.286621" toggleRate="0.002287" outputEnableRate="1.000000" outputLoad="0.000000" dataRate="ASYNC" serdes="No" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="NONE" outTerm="RDRV_NONE_NONE" ibufDisable="0.000000" dcitermDisable="0.000000" ioBank="0" vccInt="0.000000" vccAux="0.000205" vcco="0.001185" vccoCurrent="0.000659" extTerm="NONE">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="s_axi_rready" count="1">
+					<GROUPSUMMARY>
+						<IO name="s_axi_rready" clock="N/A" clockFreq="0.000000" ioStandard="LVCMOS18" bidis="0" inputs="1" outputs="0" signalRate="12500.000000" toggleRate="12.500000" dataRate="ASYNC" serdes="No" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="RTT_NONE" outTerm="NONE" ibufDisable="0.000000" dcitermDisable="0.000000" ioBank="0" vccInt="0.004031" vccAux="0.000000" vcco="0.002959" vccoCurrent="0.001644" extTerm="NONE">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="s_axi_rresp&lt;0:1&gt;" count="2">
+					<GROUPSUMMARY>
+						<IO name="s_axi_rresp&lt;0:1&gt;" clock="N/A" clockFreq="0.000000" ioStandard="LVCMOS18_12_SLOW" bidis="0" inputs="0" outputs="2" signalRate="0.000000" toggleRate="0.000000" outputEnableRate="1.000000" outputLoad="0.000000" dataRate="ASYNC" serdes="No" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="NONE" outTerm="RDRV_NONE_NONE" ibufDisable="0.000000" dcitermDisable="0.000000" ioBank="0" vccInt="0.000000" vccAux="0.000000" vcco="0.000000" vccoCurrent="0.000000" extTerm="NONE">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="s_axi_rvalid" count="1">
+					<GROUPSUMMARY>
+						<IO name="s_axi_rvalid" clock="N/A" clockFreq="0.000000" ioStandard="LVCMOS18_12_SLOW" bidis="0" inputs="0" outputs="1" signalRate="1008.693970" toggleRate="1.008694" outputEnableRate="1.000000" outputLoad="0.000000" dataRate="ASYNC" serdes="No" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="NONE" outTerm="RDRV_NONE_NONE" ibufDisable="0.000000" dcitermDisable="0.000000" ioBank="0" vccInt="0.000000" vccAux="0.002824" vcco="0.016341" vccoCurrent="0.009078" extTerm="NONE">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="s_axi_wdata&lt;0:31&gt;" count="32">
+					<GROUPSUMMARY>
+						<IO name="s_axi_wdata&lt;0:31&gt;" clock="N/A" clockFreq="0.000000" ioStandard="LVCMOS18" bidis="0" inputs="32" outputs="0" signalRate="12500.000000" toggleRate="12.500000" dataRate="ASYNC" serdes="No" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="RTT_NONE" outTerm="NONE" ibufDisable="0.000000" dcitermDisable="0.000000" ioBank="0" vccInt="0.129000" vccAux="0.000000" vcco="0.094680" vccoCurrent="0.052600" extTerm="NONE">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="s_axi_wready" count="1">
+					<GROUPSUMMARY>
+						<IO name="s_axi_wready" clock="N/A" clockFreq="0.000000" ioStandard="LVCMOS18_12_SLOW" bidis="0" inputs="0" outputs="1" signalRate="21343.832031" toggleRate="21.343832" outputEnableRate="1.000000" outputLoad="0.000000" dataRate="ASYNC" serdes="No" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="NONE" outTerm="RDRV_NONE_NONE" ibufDisable="0.000000" dcitermDisable="0.000000" ioBank="0" vccInt="0.000000" vccAux="0.059755" vcco="0.345770" vccoCurrent="0.192094" extTerm="NONE">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="s_axi_wvalid" count="1">
+					<GROUPSUMMARY>
+						<IO name="s_axi_wvalid" clock="N/A" clockFreq="0.000000" ioStandard="LVCMOS18" bidis="0" inputs="1" outputs="0" signalRate="12500.000000" toggleRate="12.500000" dataRate="ASYNC" serdes="No" preEmphasis="No" ioDelay="No" ibufLowPower="No" inTerm="RTT_NONE" outTerm="NONE" ibufDisable="0.000000" dcitermDisable="0.000000" ioBank="0" vccInt="0.004031" vccAux="0.000000" vcco="0.002959" vccoCurrent="0.001644" extTerm="NONE">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+			</BLOCKTYPE>
+			<BLOCKTYPE name="IOBANK">
+				<IOBANK numInternalVref="0" numDelayControl="0" numLVDSBanks="0">
+				</IOBANK>
+			</BLOCKTYPE>
+		</BYTYPE>
+	</BLOCKDETAILS>
+</POWERDATA>
+

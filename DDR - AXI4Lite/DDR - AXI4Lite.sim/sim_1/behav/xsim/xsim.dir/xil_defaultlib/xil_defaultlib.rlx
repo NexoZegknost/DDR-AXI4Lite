@@ -1,0 +1,12 @@
+0.7
+2020.2
+Nov 14 2025
+19:37:27
+D:/Docs/Learning HCMUT/Logic design with HDL/Project 2 - Rework/DDR - AXI4Lite/DDR - AXI4Lite.sim/sim_1/behav/xsim/glbl.v,1756381829,verilog,,,,glbl,,,,,,,,
+D:/Docs/Learning HCMUT/Logic design with HDL/Project 2 - Rework/DDR - AXI4Lite/DDR - AXI4Lite.srcs/sim_1/new/mem_controller_tb.v,1780591319,verilog,,,,mem_controller_tb,,,../../../../../../../../../Vivado/2025.2/Vivado/data/rsb/busdef,,,,,
+D:/Docs/Learning HCMUT/Logic design with HDL/Project 2 - Rework/DDR - AXI4Lite/DDR - AXI4Lite.srcs/sim_1/new/protocol_engine_tb.v,1780592875,verilog,,,,protocol_engine_tb,,,../../../../../../../../../Vivado/2025.2/Vivado/data/rsb/busdef,,,,,
+D:/Docs/Learning HCMUT/Logic design with HDL/Project 2 - Rework/DDR - AXI4Lite/DDR - AXI4Lite.srcs/sources_1/new/axi_slave_interface.v,1780589397,verilog,,D:/Docs/Learning HCMUT/Logic design with HDL/Project 2 - Rework/DDR - AXI4Lite/DDR - AXI4Lite.srcs/sources_1/new/cmd_scheduler.v,,axi_slave_interface,,,../../../../../../../../../Vivado/2025.2/Vivado/data/rsb/busdef,,,,,
+D:/Docs/Learning HCMUT/Logic design with HDL/Project 2 - Rework/DDR - AXI4Lite/DDR - AXI4Lite.srcs/sources_1/new/cmd_scheduler.v,1780581244,verilog,,D:/Docs/Learning HCMUT/Logic design with HDL/Project 2 - Rework/DDR - AXI4Lite/DDR - AXI4Lite.srcs/sources_1/new/mem_controller_top.v,,cmd_scheduler,,,../../../../../../../../../Vivado/2025.2/Vivado/data/rsb/busdef,,,,,
+D:/Docs/Learning HCMUT/Logic design with HDL/Project 2 - Rework/DDR - AXI4Lite/DDR - AXI4Lite.srcs/sources_1/new/mem_controller_top.v,1780591037,verilog,,D:/Docs/Learning HCMUT/Logic design with HDL/Project 2 - Rework/DDR - AXI4Lite/DDR - AXI4Lite.srcs/sources_1/new/protocol_engine.v,,mem_controller_top,,,../../../../../../../../../Vivado/2025.2/Vivado/data/rsb/busdef,,,,,
+D:/Docs/Learning HCMUT/Logic design with HDL/Project 2 - Rework/DDR - AXI4Lite/DDR - AXI4Lite.srcs/sources_1/new/protocol_engine.v,1780590386,verilog,,D:/Docs/Learning HCMUT/Logic design with HDL/Project 2 - Rework/DDR - AXI4Lite/DDR - AXI4Lite.srcs/sim_1/new/protocol_engine_tb.v,,protocol_engine,,,../../../../../../../../../Vivado/2025.2/Vivado/data/rsb/busdef,,,,,
+D:/Docs/Learning HCMUT/Logic design with HDL/Project 2 - Rework/DDR - AXI4Lite/DDR - AXI4Lite.srcs/sources_1/new/refresh_timer.v,1780581146,verilog,,D:/Docs/Learning HCMUT/Logic design with HDL/Project 2 - Rework/DDR - AXI4Lite/DDR - AXI4Lite.srcs/sim_1/new/mem_controller_tb.v,,refresh_timer,,,../../../../../../../../../Vivado/2025.2/Vivado/data/rsb/busdef,,,,,
