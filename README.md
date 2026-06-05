@@ -145,6 +145,8 @@ git clone https://github.com/NexoZegknost/DDR-AXI4Lite.git
     └── Waveform
         └── protocol_engine.png
 ```
+## Modules design
+https://gist.github.com/NexoZegknost/d753cbc95a5cb089d8bd735e5c3fc6e5
 
 ## 👥 Contributing
 
