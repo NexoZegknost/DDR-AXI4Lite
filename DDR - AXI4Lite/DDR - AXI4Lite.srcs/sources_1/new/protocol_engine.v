@@ -2,22 +2,22 @@ module protocol_engine (
     input wire clk, 
     input wire rst_n,
     
-    // Giao tiếp nội bộ với Scheduler
+    // Scheduler
     input wire       cmd_valid, 
     output reg       cmd_ready,
     input wire [31:0] cmd_addr, 
     input wire        cmd_rw,
     input wire [31:0] cmd_wdata, 
     
-    // Xử lý Refresh
+    // Refresh
     input wire       ref_req, 
     output reg       ref_ack,
     
-    // Giao tiếp phản hồi Data đọc về AXI Slave Interface
+    // AXI Slave Interface
     output reg [31:0] read_data_out,
     output reg        read_data_valid,
     
-    // Giao tiếp DRAM
+    // DRAM
     output reg        mem_cs_n, 
     output reg        mem_ras_n, 
     output reg        mem_cas_n, 
@@ -27,7 +27,7 @@ module protocol_engine (
     inout  wire [31:0] mem_dq
 );
 
-    // Định nghĩa các trạng thái FSM
+    // FSM
     localparam STATE_INIT      = 4'd0,
                STATE_IDLE      = 4'd1,
                STATE_ACTIVATE  = 4'd2,
@@ -40,7 +40,7 @@ module protocol_engine (
     reg [7:0] timer_reg; 
     reg [7:0] next_timer;
 
-    // Khai báo các lệnh mã hóa của SDRAM/DDR
+    // SDRAM/DDR
     localparam CMD_ACT  = 4'b0011,
                CMD_READ = 4'b0101,
                CMD_WRIT = 4'b0100,
@@ -48,12 +48,11 @@ module protocol_engine (
                CMD_REF  = 4'b0001,
                CMD_NOP  = 4'b0111;
 
-    // Phân rã địa chỉ
+    // Address
     wire [2:0]  req_bank = cmd_addr[14:12];
     wire [14:0] req_row  = cmd_addr[29:15];
     wire [14:0] req_col  = {3'b000, cmd_addr[11:0]};
-
-    // Cập nhật trạng thái và bộ đếm tuần tự
+    
     always @(posedge clk or negedge rst_n) begin
         if (!rst_n) begin
             current_state <= STATE_INIT;
@@ -64,11 +63,10 @@ module protocol_engine (
         end
     end
 
-    // Combinational Logic: Tính toán Next State & Timer
+    // Combinational Logic
     always @(*) begin
         next_state = current_state;
         
-        // Mặc định bộ đếm tự giảm nếu đang lớn hơn 0
         if (timer_reg > 0) begin
             next_timer = timer_reg - 1'b1;
         end else begin
@@ -84,18 +82,17 @@ module protocol_engine (
             STATE_IDLE: begin
                 if (ref_req) begin
                     next_state = STATE_REFRESH;
-                    next_timer = 8'd5; // Trễ Refresh
+                    next_timer = 8'd5; // Refresh delay
                 end else if (cmd_valid) begin
                     next_state = STATE_ACTIVATE;
-                    next_timer = 8'd3; // Trễ tRCD (3 chu kỳ)
+                    next_timer = 8'd3; // tRCD delay
                 end
             end
             
             STATE_ACTIVATE: begin
-                // Đợi bộ đếm lùi về 0 hoàn toàn mới cho phép đổi trạng thái
                 if (timer_reg == 8'd0) begin
                     next_state = (cmd_rw) ? STATE_WRITE : STATE_READ;
-                    next_timer = 8'd4; // Trễ chu kỳ ghi/đọc
+                    next_timer = 8'd4;
                 end
             end
             
